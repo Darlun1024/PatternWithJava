@@ -1,0 +1,7 @@
+package com.wsj.pattern;
+
+public interface Notifer {
+	void addObserver(Observer observer);
+	void removerServer(Observer observer);
+	void dispath();
+}

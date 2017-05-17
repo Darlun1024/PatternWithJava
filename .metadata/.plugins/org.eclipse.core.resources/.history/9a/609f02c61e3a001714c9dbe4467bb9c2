@@ -1,0 +1,13 @@
+package com.wsj.pattern;
+
+public class Sleeper implements Observer {
+	private String mName;
+	public Sleeper(String name){
+		mName = name;
+	}
+	@Override
+	public void alertMessage(String message) {
+		System.out.println(mName+"：赶紧起来");
+	}
+
+}

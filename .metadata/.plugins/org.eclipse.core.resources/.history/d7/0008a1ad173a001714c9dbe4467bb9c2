@@ -1,0 +1,12 @@
+package com.wsj.pattern;
+
+public class ObserverTest {
+	public static void main(String[] args){
+		Boss boss = new Boss();
+		
+		
+		
+	}
+	
+	
+}

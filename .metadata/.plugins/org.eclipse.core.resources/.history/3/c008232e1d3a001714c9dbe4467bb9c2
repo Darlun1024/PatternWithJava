@@ -1,0 +1,58 @@
+package eventbus;
+
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class EventBus {
+	private static EventBus eventBus;
+	private HashMap<String,List<Object>> mListenerMap;
+	public static EventBus getInstance(){
+		if(eventBus==null)
+			eventBus = new EventBus();
+		return eventBus;
+	}
+	
+	private EventBus(){
+		mListenerMap = new HashMap<>();
+	}
+	
+	public void regist(Object obj){
+		String className = obj.getClass().toString();
+		Class targetClass = null;
+		try {
+			targetClass = Class.forName(className);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+
+		for (Method m : targetClass.getMethods()) {
+			if (m.isAnnotationPresent(SubScribe.class)) {
+				Class<?>[] paramType = m.getParameterTypes();
+				if(paramType.length<1)return;
+				String eventType = paramType[0].getClass().toString();
+				List<Object> list = mListenerMap.get(eventType);
+				if(list==null){
+					list = new ArrayList<>();
+					mListenerMap.put(eventType,list);
+				}
+				list.add(m);
+				
+				System.out.println("被SubScribe注解修饰的方法名：" + m.getName());
+			} else {
+				System.out.println("没被SubScribe注解修饰的方法名：" + m.getName());
+			}
+		}
+	}
+	
+	
+	static class EventListener{
+		Method method;
+		Object object;
+		public EventListener(Method method,Object object){
+			
+		}
+	}
+	
+}

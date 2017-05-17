@@ -1,0 +1,23 @@
+package com.wsj.pattern;
+
+public class Boss implements Notifer{
+
+	@Override
+	public void addObserver() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removerServer() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void dispath() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

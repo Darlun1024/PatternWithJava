@@ -1,0 +1,33 @@
+package com.wsj.pattern;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Boss implements Notifer{
+	private List<Observer> mObservers;
+	
+	public Boss() {
+		mObservers  = new ArrayList<>();
+	}
+	
+	@Override
+	public void dispath() {
+		mObservers.forEach(observer->observer.alertMessage("老板来了"));
+	}
+
+
+
+	@Override
+	public void addObserver(Observer observer) {
+		mObservers.add(observer);
+	}
+
+	@Override
+	public void removerServer(Observer observer) {
+		// TODO Auto-generated method stub
+		if(mObservers.contains(observer)){
+			mObservers.remove(observer);
+		}
+	}
+
+}

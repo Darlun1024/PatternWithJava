@@ -1,0 +1,14 @@
+package com.wsj.pattern;
+
+public class ObserverTest {
+	public static void main(String[] args){
+		Boss boss = new Boss();
+		
+		Sleeper sleep1 = new Sleeper("熊大");
+		Sleeper sleep2 = new Sleeper("熊二");
+		
+		
+	}
+	
+	
+}

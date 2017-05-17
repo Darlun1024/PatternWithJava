@@ -1,0 +1,23 @@
+package com.wsj.pattern;
+
+public class ObserverTest {
+	public static void main(String[] args){
+		Boss boss = new Boss("老板");
+		
+		Sleeper sleep1 = new Sleeper("熊大");
+		Sleeper sleep2 = new Sleeper("熊二");
+		
+		boss.addObserver(sleep1);
+		boss.addObserver(sleep2);
+		
+		Player player1 = new Player("Moon");
+		Player player2 = new Player("Sky");
+		
+		boss.addObserver(player1);
+		boss.addObserver(player2);
+		
+		boss.dispath();
+	}
+	
+	
+}

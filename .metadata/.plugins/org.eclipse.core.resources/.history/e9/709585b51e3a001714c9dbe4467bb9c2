@@ -1,0 +1,28 @@
+package com.wsj.pattern;
+
+import eventbus.SubScribe;
+import eventbus.event.BossComeEvent;
+import eventbus.event.BossLeaveEvent;
+
+public class Player implements Observer {
+	private String mName;
+	public Player(String name){
+		mName = name;
+	}
+	
+	@Override
+	public void alertMessage(String message) {
+		// TODO Auto-generated method stub
+		System.out.println(mName+"：关掉了游戏");
+	}
+	
+	@SubScribe
+	public void onBossCome(BossComeEvent event){
+		
+	}
+	@SubScribe
+	public void onBossLeave(BossLeaveEvent event){
+		
+	}
+
+}

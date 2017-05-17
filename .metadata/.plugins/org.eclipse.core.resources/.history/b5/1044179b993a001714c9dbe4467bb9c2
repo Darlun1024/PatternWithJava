@@ -1,0 +1,5 @@
+package com.wsj.pattern;
+
+public interface Observer {
+	void alertMessage(String message);
+}
