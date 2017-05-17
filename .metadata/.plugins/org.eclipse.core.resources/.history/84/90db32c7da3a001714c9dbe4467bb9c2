@@ -1,0 +1,9 @@
+package com.wsj.pattern.state;
+
+public abstract class State {
+
+	Person person;
+	
+	abstract void run();
+	
+}

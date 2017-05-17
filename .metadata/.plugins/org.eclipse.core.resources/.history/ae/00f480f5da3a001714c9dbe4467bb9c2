@@ -1,0 +1,15 @@
+package com.wsj.pattern.state;
+
+public class Baby extends State {
+
+	public Baby(Person person) {
+		super(person);
+	}
+
+	@Override
+	void run100() {
+		// TODO Auto-generated method stub
+			
+	}
+
+}

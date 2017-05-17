@@ -1,0 +1,10 @@
+package com.wsj.pattern.command;
+
+public class Docment {
+	private String text;
+	public void append(String s){
+		
+	}
+	
+	
+}

@@ -1,0 +1,8 @@
+package com.wsj.pattern.command;
+
+public class Docment {
+
+	public void append(String s){
+		
+	}
+}

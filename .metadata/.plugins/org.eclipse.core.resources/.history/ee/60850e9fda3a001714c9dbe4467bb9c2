@@ -1,0 +1,5 @@
+package com.wsj.pattern.state;
+
+public class Person {
+
+}

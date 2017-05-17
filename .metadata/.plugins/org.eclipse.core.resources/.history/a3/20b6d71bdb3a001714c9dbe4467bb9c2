@@ -1,0 +1,7 @@
+package com.wsj.pattern.state;
+
+public class Person {
+	public String name;
+	public String age;
+	
+}

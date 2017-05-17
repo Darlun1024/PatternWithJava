@@ -1,0 +1,10 @@
+package com.wsj.pattern.command;
+
+import java.util.List;
+
+public class Word {
+
+	List<ICommand> redoCommandList;
+	List<ICommand> undoCommandList;
+	
+}

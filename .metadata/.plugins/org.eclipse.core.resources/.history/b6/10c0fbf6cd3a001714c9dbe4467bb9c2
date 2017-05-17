@@ -1,0 +1,11 @@
+package com.wsj.pattern.command;
+
+public class Docment {
+	private StringBuilder stringBuilder = new StringBuilder();
+	
+	public void append(String s){
+		stringBuilder.append(s);
+	}
+	
+	
+}

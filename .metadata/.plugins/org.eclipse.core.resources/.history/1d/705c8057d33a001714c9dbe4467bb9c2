@@ -1,0 +1,24 @@
+package com.wsj.pattern.command;
+
+public class InsertCommand extends WordCommand  {
+	private int index;
+	private String text;
+	
+	public   InsertCommand(String text,int index) {
+		// TODO Auto-generated constructor stub
+		this.index = index;
+		this.text  = text;
+	}
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void redo() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

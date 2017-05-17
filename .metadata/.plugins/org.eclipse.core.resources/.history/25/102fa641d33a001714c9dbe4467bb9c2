@@ -1,0 +1,6 @@
+package com.wsj.pattern.command;
+
+public abstract class WordCommand implements ICommand{
+
+	
+}

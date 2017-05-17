@@ -1,0 +1,17 @@
+package com.wsj.pattern.command;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Word {
+
+	List<ICommand> redoCommandList;
+	List<ICommand> undoCommandList;
+	
+	public Word(){
+		redoCommandList = new ArrayList<>();
+		undoCommandList = new ArrayList<>();
+	}
+	
+	
+}

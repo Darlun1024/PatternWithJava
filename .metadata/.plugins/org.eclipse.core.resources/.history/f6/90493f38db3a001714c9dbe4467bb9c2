@@ -1,0 +1,13 @@
+package com.wsj.pattern.state;
+
+public class Person {
+	public String name;
+	public String age;
+	
+	State currentAge;
+	
+	public Person(String name,int age,State state){
+		
+	}
+	
+}

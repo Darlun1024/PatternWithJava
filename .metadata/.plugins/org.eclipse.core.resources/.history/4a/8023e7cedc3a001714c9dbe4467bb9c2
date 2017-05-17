@@ -1,0 +1,20 @@
+package com.wsj.pattern.state;
+
+public class Midlife extends State {
+
+	public Midlife(Person person) {
+		super(person);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	void run100() {
+		if(person.age > 60){
+			person.setState(new OldAge(person));
+			person.run100();
+		}else{
+			System.out.println("风驰电掣 14秒跑完全程");
+		}
+	}
+
+}

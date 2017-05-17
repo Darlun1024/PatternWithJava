@@ -1,0 +1,18 @@
+package com.wsj.pattern.command;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Docment {
+	 List<String> stringList = new ArrayList();
+	private StringBuilder stringBuilder = new StringBuilder();
+	
+	public void append(String s){
+		stringList.add(s);
+	}
+	
+	public void remove(){
+		stringList.remove(stringList.size()-1);
+	}
+	
+}

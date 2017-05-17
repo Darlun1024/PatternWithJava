@@ -1,0 +1,21 @@
+package com.wsj.pattern.command;
+
+public class InsertCommand implements ICommand {
+	private int index;
+	private String text;
+	public  public InsertCommand(String text,int index) {
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void redo() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

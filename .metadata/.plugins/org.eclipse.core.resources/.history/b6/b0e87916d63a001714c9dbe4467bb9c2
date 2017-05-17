@@ -1,0 +1,11 @@
+package com.wsj.pattern.command;
+
+public class CommandTest {         
+	
+	public static void main(String[] args){
+		Document document = new Document();
+		Word word = new Word();
+		AppendCommand append1 = new AppendCommand("hello", document);
+	}
+	
+} 

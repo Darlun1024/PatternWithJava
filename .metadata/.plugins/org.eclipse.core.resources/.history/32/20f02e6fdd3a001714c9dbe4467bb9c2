@@ -1,0 +1,20 @@
+package com.wsj.pattern.state;
+
+public class Teenager extends State {
+
+	public Teenager(Person person) {
+		super(person);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	void run100() {
+		if(person.age > 16){
+			person.setState(new Youth(person));
+			person.run100();
+		}else{
+			System.out.println("30秒跑完全程");
+		}
+	}
+
+}

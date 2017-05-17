@@ -1,0 +1,19 @@
+package com.wsj.pattern.state;
+
+public class Person {
+	public String name;
+	public int age;
+	
+	State currentAge;
+	
+	public Person(String name,int age,State state){
+		this.name = name;
+		this.age = age;
+		this.currentAge = state;
+	}
+	
+	public void run100(){
+		currentAge.run100();
+	}
+	
+}

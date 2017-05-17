@@ -1,0 +1,41 @@
+package com.wsj.pattern.command;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Word {
+
+	List<ICommand> redoCommandList;
+	List<ICommand> undoCommandList;
+	List<ICommand> executeCommandList;
+	public Word(){
+		redoCommandList = new ArrayList<>();
+		undoCommandList = new ArrayList<>();
+		executeCommandList = new ArrayList<>();
+	}
+	
+	public void addCommand(ICommand command){
+		executeCommandList.add(command);
+	}
+	
+	public void execute(){
+		while(executeCommandList.size()>0){
+			executeCommandList.get(0).redo();
+			undoCommandList.add(redoCommandList.get(0));
+			executeCommandList.remove(0);
+		}
+	}
+	
+	public void undo(){
+		if(undoCommandList.size()>0){
+			ICommand command = undoCommandList.get(undoCommandList.size()-1);
+			command.undo();
+			undoCommandList.remove(command);
+			redoCommandList.add(command);
+		}
+	}
+	
+	public void redo(){
+		
+	}
+}

@@ -1,0 +1,11 @@
+package com.wsj.pattern.state;
+
+public class Child extends State {
+
+	@Override
+	void run100() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

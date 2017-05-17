@@ -1,0 +1,22 @@
+package com.wsj.pattern.command;
+
+public class AppendCommand implements ICommand {
+
+	private String text;
+	private Document document;
+	public AppendCommand(String str,Document document) {
+		this.text = str;
+		this.document = document;
+	}
+	
+	@Override
+	public void undo() {
+		document.remove();
+	}
+
+	@Override
+	public void redo() {
+		document.append(text);
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.wsj.pattern.state;
+
+public class StateTest {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Person person = new Person("小小", 1);
+		Baby baby = new Baby(person);
+		person.run100();
+		person.setAge(5);
+	}
+	
+
+}
