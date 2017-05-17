@@ -1,0 +1,9 @@
+package com.wsj.pattern.chain;
+
+public class ChainTest {
+	
+	public static void main(String[] args){
+		Request request = new Request("焦广平", "请假半天", 5);
+		Manager manager = new Manager("武思杰");
+	}
+}

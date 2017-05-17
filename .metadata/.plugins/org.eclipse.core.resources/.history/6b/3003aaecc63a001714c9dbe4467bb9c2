@@ -1,0 +1,17 @@
+package com.wsj.pattern.chain;
+
+public class GeneralManager extends Handler {
+
+	@Override
+	void handleRequest(Request request) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	void setSuperior(Handler handler) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

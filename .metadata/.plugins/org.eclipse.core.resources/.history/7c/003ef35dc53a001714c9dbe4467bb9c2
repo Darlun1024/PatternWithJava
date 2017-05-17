@@ -1,0 +1,6 @@
+package com.wsj.pattern.chain;
+
+public interface Handler {
+
+	void handleRequest(Request request);
+}

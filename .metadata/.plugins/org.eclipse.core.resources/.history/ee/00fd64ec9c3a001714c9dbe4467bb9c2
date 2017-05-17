@@ -1,0 +1,9 @@
+package com.wsj.pattern.iterator;
+
+public class MyMapIterator {
+
+	public MyMapIterator(MyMap map) {
+		// TODO Auto-generated constructor stub
+	}
+	
+}

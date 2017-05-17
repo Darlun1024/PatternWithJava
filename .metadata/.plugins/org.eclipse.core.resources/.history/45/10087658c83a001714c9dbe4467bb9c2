@@ -1,0 +1,14 @@
+package com.wsj.pattern.chain;
+
+public class ChainTest {
+	
+	public static void main(String[] args){
+		Request request = new Request("焦广平", "请假半天", 5);
+		Manager manager = new Manager("武思杰");
+		Director director = new Director("王明");
+		ViceGeneralManager viceGeneralManager = new ViceGeneralManager("许总");
+		GeneralManager generalManager = new GeneralManager("朱总");
+		
+		manager.handleRequest(request);
+	}
+}

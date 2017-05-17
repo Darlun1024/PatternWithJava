@@ -1,0 +1,21 @@
+package com.wsj.pattern.iterator;
+
+import java.util.HashMap;
+
+public class MyMap<K,V>{
+	HashMap<K,V> map;
+	Iterator iterator;
+	
+	public MyMap(){
+		map = new HashMap<>();
+	}
+	
+	public Iterator<V> iterator(){
+		iterator = new MyMapIterator(this);
+		retrurn iterator;
+	}
+	
+	public void put(K key,V value){
+		map.put(key, value);
+	}
+}

@@ -1,0 +1,11 @@
+package com.wsj.pattern.chain;
+
+public class ViceGeneralManager extends Handler{
+
+	@Override
+	public void handleRequest(Request request) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

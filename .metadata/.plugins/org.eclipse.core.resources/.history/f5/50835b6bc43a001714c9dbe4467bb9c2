@@ -1,0 +1,10 @@
+package com.wsj.pattern.chain;
+
+public class Requset {
+
+	public String request;
+	public int level;
+	
+	
+	
+}

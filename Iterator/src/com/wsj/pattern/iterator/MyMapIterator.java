@@ -1,0 +1,33 @@
+package com.wsj.pattern.iterator;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class MyMapIterator<K,V> implements Iterator<V>{
+	Set<K> keySet;
+	java.util.Iterator<K> keyIterator;
+	MyMap<K,V> map;
+	public MyMapIterator(MyMap map) {
+		// TODO Auto-generated constructor stub
+		this.map = map;
+		keySet   = map.keySet();
+		keyIterator = keySet.iterator();
+	}
+
+	@Override
+	public V next() {
+		return map.get(keyIterator.next());
+	}
+
+	@Override
+	public boolean hasNext() {
+		// TODO Auto-generated method stub
+		return keyIterator.hasNext();
+	}
+
+	@Override
+	public boolean isDone() {
+		return !keyIterator.hasNext();
+	}
+	
+}

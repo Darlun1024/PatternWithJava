@@ -1,0 +1,5 @@
+package com.wsj.pattern.strategy;
+
+public class Cashier {
+
+}

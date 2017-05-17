@@ -1,0 +1,10 @@
+package com.wsj.pattern.iterator;
+
+import java.util.HashMap;
+
+public class MyMap<K,V>{
+
+	HashMap<K, V>
+	Iterator iterator;
+	
+}

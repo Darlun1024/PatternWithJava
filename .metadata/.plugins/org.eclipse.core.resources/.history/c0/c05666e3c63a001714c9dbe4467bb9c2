@@ -1,0 +1,8 @@
+package com.wsj.pattern.chain;
+
+public abstract class Handler {
+	public String name;
+	protected Handler superHandler;
+	abstract void handleRequest(Request request);
+	abstract void setSuperior(Handler handler);
+}

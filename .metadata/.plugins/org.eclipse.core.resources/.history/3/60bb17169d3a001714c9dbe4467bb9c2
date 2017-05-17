@@ -1,0 +1,12 @@
+package com.wsj.pattern.iterator;
+
+import java.util.HashMap;
+
+public class MyMapIterator implements Iterator<T>{
+
+	public MyMapIterator(MyMap map) {
+		
+		// TODO Auto-generated constructor stub
+	}
+	
+}

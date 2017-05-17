@@ -1,0 +1,15 @@
+package com.wsj.pattern.strategy;
+
+public class ReturnCash implements CashCompute {
+
+	public ReturnCash(float condiation,float retur){
+		
+	}
+	
+	@Override
+	public float cash(float pric) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.wsj.pattern.chain;
+
+public class GeneralManager extends Handler {
+
+	@Override
+	void handleRequest(Request request) {
+		// TODO Auto-generated method stub
+
+	}
+
+	
+
+}

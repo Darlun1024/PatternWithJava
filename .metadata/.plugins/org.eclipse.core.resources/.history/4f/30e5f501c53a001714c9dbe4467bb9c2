@@ -1,0 +1,17 @@
+package com.wsj.pattern.chain;
+
+public class Request {
+
+	public String applicant;
+	public String request;
+	public int level;
+	
+	public Request(String applicant,String request,int level){
+		
+		this.applicant = applicant;
+		this.request = request;
+		this.level   = level;
+		
+	}
+
+}

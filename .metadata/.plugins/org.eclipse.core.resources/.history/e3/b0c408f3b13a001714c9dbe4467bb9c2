@@ -1,0 +1,19 @@
+package com.wsj.pattern.strategy;
+
+public class Discount implements CashCompute {
+
+	/**
+	 * 
+	 * @param rete 打折比例
+	 */
+	public Discount(float rete){
+		
+	}
+	
+	@Override
+	public float cash(float pric) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

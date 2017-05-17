@@ -1,0 +1,21 @@
+package com.wsj.pattern.strategy;
+
+public class Cashier {
+
+	CashCompute cashCompute;
+	private float price;
+	public Cashier(CashCompute cashCompute){
+		this.cashCompute = cashCompute;
+	}
+	public void setCashCompute(CashCompute cashCompute){
+		this.cashCompute=cashCompute;
+	}
+	
+	public void setPrice(float price){
+		this.price = price;
+	}
+	
+	public float cash(){
+		return this.cashCompute.cash();
+	}
+}

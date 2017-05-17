@@ -1,0 +1,24 @@
+package com.wsj.pattern.strategy;
+
+public class ReturnCash implements CashCompute {
+	private float  mCondiation;
+	private float  mReturn;
+	/**
+	 * 
+	 * @param condiation 总价到达此价位
+	 * @param retur      返还多少现金
+	 */
+	public ReturnCash(float condiation,float retur){
+		this.mCondiation =condiation;
+		this.mReturn = retur;
+	}
+	
+	@Override
+	public float cash(float price) {
+		// TODO Auto-generated method stub
+		if(price < mCondiation)return price;
+		int count = price/mCondiation;
+		return 0;
+	}
+
+}

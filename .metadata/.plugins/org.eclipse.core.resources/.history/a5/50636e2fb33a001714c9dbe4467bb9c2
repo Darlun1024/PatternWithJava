@@ -1,0 +1,13 @@
+package com.wsj.pattern.strategy;
+
+public class StrategyTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Cashier cashier = new Cashier(new Normal());
+		cashier.cash(300);
+		cashier.setCashCompute(new ReturnCash(100.0f, 10f));
+		
+	}
+}

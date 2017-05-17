@@ -1,0 +1,8 @@
+package com.wsj.pattern.chain;
+
+public class ChainTest {
+
+	public static void main(String[] args){
+		
+	}
+}
