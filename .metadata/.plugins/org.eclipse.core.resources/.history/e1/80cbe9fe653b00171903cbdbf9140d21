@@ -1,0 +1,10 @@
+package com.wjs.pattern.mediator;
+
+public class User {
+	public String name;
+	public User() {
+		// TODO Auto-generated constructor stub
+		
+	}
+
+}

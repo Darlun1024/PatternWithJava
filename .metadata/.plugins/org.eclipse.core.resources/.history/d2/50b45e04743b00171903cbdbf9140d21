@@ -1,0 +1,18 @@
+package com.wsj.pattern.visitor;
+
+public class Marriage implements IAction {
+
+	public Marriage() {
+	}
+
+	@Override
+	public void visitMan(Man man) {
+		System.out.println("男人结婚后进入爱情坟墓");
+	}
+
+	@Override
+	public void visitWoman(Woman woman) {
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.wsj.pattern.visitor;
+
+public class Shopping implements IAction {
+
+	public Shopping() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void visitMan(Man man) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void visitWoman(Woman woman) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

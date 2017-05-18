@@ -1,0 +1,9 @@
+package com.wsj.pattern.memo;
+
+public class Memo {
+
+	public Memo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

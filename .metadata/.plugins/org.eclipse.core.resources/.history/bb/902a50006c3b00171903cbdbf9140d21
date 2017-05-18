@@ -1,0 +1,11 @@
+package com.wsj.pattern.memo;
+
+public class Svn {
+
+	public Svn() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

@@ -1,0 +1,16 @@
+package com.wjs.pattern.mediator;
+
+public class User {
+	public String name; //姓名
+	protected IM im;    //中介者
+	public User() {
+		// TODO Auto-generated constructor stub
+		
+	}
+	
+	
+	public void talk(String message){
+		
+	}
+
+}

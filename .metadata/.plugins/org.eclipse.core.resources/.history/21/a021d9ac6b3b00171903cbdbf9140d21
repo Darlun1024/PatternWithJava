@@ -1,0 +1,14 @@
+package com.wsj.pattern.memo;
+
+public class Version {
+	String text;
+	String name; //为版本命名
+	public Version(String text) {
+		this.text = text;
+	}
+	
+	public String getText(){
+		return text;
+	}
+
+}

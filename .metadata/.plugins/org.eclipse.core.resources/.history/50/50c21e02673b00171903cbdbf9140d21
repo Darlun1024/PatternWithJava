@@ -1,0 +1,14 @@
+package com.wjs.pattern.mediator;
+
+public class IM {
+	protected User user1;
+	protected User user2;
+	public IM() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void talk(User user,String message){
+		
+	}
+
+}

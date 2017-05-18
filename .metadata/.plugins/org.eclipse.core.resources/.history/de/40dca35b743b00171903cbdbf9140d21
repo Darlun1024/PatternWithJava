@@ -1,0 +1,9 @@
+package com.wsj.pattern.visitor;
+
+public class World {
+
+	public World() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

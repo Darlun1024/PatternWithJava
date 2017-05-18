@@ -1,0 +1,9 @@
+package com.wsj.pattern.visitor;
+
+public class VisitorTest {
+
+	public VisitorTest() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

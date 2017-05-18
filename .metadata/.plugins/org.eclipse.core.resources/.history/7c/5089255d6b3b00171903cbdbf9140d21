@@ -1,0 +1,9 @@
+package com.wsj.pattern.memo;
+
+public class Version {
+	String text;
+	public Version() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.wsj.pattern.memo;
+
+public class MemoTest {
+
+	public static void main(String[] args) {
+			Svn svn = new Svn();
+			Code code = new Code();
+			code.appendCode("<Html>");
+			code.appendCode("<Body>");
+			
+			svn.addVersion("第一版", code.createVersion());
+	}
+
+	
+	
+}

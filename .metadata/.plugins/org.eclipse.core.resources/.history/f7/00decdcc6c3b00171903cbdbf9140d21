@@ -1,0 +1,14 @@
+package com.wsj.pattern.memo;
+
+public class MemoTest {
+
+	public static void main(String[] args) {
+			Code code = new Code();
+			code.appendCode("<Html>");
+			code.appendCode("<Body>");
+			
+	}
+
+	
+	
+}

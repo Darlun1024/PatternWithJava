@@ -1,0 +1,18 @@
+package com.wsj.pattern.memo;
+
+public class Code {
+	String text;
+	public Code() {
+		// TODO Auto-generated constructor stub
+		
+	}
+	
+	public Version createVersion(){
+		
+	}
+	
+	public void restore(Version version){
+		
+	}
+
+}

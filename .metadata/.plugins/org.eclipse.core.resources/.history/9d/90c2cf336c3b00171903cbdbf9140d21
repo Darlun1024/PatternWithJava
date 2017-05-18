@@ -1,0 +1,23 @@
+package com.wsj.pattern.memo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Svn {
+	List<Version> versionList = new ArrayList<>();
+	public Svn() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void addVersion(String name,Version version){
+		version.name = name;
+		if(versionList.contains(version))return;
+		versionList.add(version);
+	}
+	
+	public void getVersion(int index){
+		
+	}
+	
+
+}

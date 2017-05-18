@@ -1,0 +1,14 @@
+package com.wsj.pattern.visitor;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class World {
+
+	List<Person> personLost = new ArrayList<>();
+	
+	public World() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=Strategy/src&lt;com.wsj.pattern.strategy{CashCompute.java[CashCompute" modifiers="513" timestamp="1494992080000"/>
+<typeInfo handle="=Command/src&lt;com.wsj.pattern.command{ICommand.java[ICommand" modifiers="513" timestamp="1495005607000"/>
+<typeInfo handle="=Visitor/src&lt;com.wsj.pattern.visitor{IAction.java[IAction" modifiers="513" timestamp="1495075252000"/>
+</typeInfoHistroy>

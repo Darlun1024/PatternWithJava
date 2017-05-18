@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.wsj.pattern.memo.Memo&apos; to &apos;Version&apos;&#x0A;- Original project: &apos;Memo&apos;&#x0A;- Original element: &apos;com.wsj.pattern.memo.Memo&apos;&#x0A;- Renamed element: &apos;com.wsj.pattern.memo.Version&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Memo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.wsj.pattern.memo{Memo.java[Memo" matchStrategy="1" name="Version" qualified="false" references="true" similarDeclarations="false" stamp="1495071401612" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+package com.wsj.pattern.visitor;
+
+public class IAction {
+
+	public IAction() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

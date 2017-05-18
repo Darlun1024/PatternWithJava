@@ -1,0 +1,7 @@
+package com.wsj.pattern.visitor;
+
+public interface IVisitor {
+
+	
+	
+}

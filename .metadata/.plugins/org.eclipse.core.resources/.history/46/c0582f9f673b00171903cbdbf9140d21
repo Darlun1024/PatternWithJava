@@ -1,0 +1,21 @@
+package com.wjs.pattern.mediator;
+
+public class User {
+	public String name; //姓名
+	protected IM  im;    //中介者
+	public User(String name,IM im) {
+		this.name = name;
+		this.im   = im;
+	}
+	
+	
+	public void talk(String message){
+		System.out.println(name+":"+this,message);
+		this.im.talk(this,message);
+	}
+	
+	public void getMessage(String message){
+		System.out.println(message);
+	}
+
+}

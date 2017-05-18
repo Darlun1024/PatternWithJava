@@ -1,0 +1,16 @@
+package com.wjs.pattern.mediator;
+
+public class MediatorTest {
+	
+	public MediatorTest() {
+		// TODO Auto-generated constructor stub
+		
+		IM QQ = new IM();
+		User user1= new User("LiLei", QQ);
+		User user2= new User("Hanmm", QQ);
+		QQ.setUser1(user1);
+		QQ.setUser2(user2);
+		
+	}
+	
+}
